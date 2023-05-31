@@ -2,6 +2,7 @@
 
 using System.Collections.Generic;
 using DG.Tweening;
+using Managers;
 using UI.CanvasGroups;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ namespace UI.MainMenu
     {
         [SerializeField] private CanvasGroupSceneTransition canvasGroupSceneTransition;
         [SerializeField] private List<LevelButton> buttonList;
+        private GameManager _gameManager;
 
         public CanvasGroupSceneTransition GroupSceneTransition => canvasGroupSceneTransition;
 
@@ -42,6 +44,10 @@ namespace UI.MainMenu
             {
                 button.OnClick(this);
             }
+            _gameManager = DependencyInjector.Instance.Resolve<GameManager>();
+            _gameManager.Background.TurnOn();
+            _gameManager.DefaultUI.TurnOff();
+            
         }
 
     }

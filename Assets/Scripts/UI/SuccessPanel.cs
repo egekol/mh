@@ -3,6 +3,7 @@
 using System;
 using Managers;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace UI
@@ -43,8 +44,9 @@ namespace UI
         private void NewLevel()
         {
             successUI.gameObject.SetActive(false);
-            LevelManager.StartLevel();
+            // LevelManager.StartLevel();
             nextLevelButton.onClick.RemoveListener(NewLevel);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8648404349060128151}
   - component: {fileID: 8648404349060128234}
   - component: {fileID: 8648404349060128235}
+  - component: {fileID: 8029922134965041458}
   m_Layer: 5
   m_Name: DefaultUI
   m_TagString: Untagged
@@ -85,7 +86,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8648404349060128151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,9 +125,51 @@ CanvasGroup:
   m_GameObject: {fileID: 8648404349060128148}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &8029922134965041458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8648404349060128148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4fd146527b61614a96da3a84e74ad78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  on: 1
+  turnOffSiblings: 0
+  onTransitions:
+    speed: -1
+    roots: []
+    aliases: []
+    targets: []
+    entries:
+    - root: {fileID: 4109546631880772, guid: 8c614b2a58c4e2540b396e03fbec3861, type: 3}
+      speed: -1
+      aliases:
+      - Key: Fade
+        Obj: {fileID: 8648404349060128235}
+  offTransitions:
+    speed: -1
+    roots: []
+    aliases: []
+    targets: []
+    entries:
+    - root: {fileID: 4109546631880772, guid: 31850616c769f194bb1e0cca518f21ca, type: 3}
+      speed: -1
+      aliases:
+      - Key: Fade
+        Obj: {fileID: 8648404349060128235}
+  onOn:
+    m_PersistentCalls:
+      m_Calls: []
+  onOff:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &8648404348986018845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,6 +217,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8322597067738300323, guid: 86f31f68e9b871f439648d16fc700df1,
+        type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 5247971418016627405}
     m_RemovedComponents:
     - {fileID: 503490885268063571, guid: 86f31f68e9b871f439648d16fc700df1, type: 3}
     - {fileID: 5906872442399149192, guid: 86f31f68e9b871f439648d16fc700df1, type: 3}

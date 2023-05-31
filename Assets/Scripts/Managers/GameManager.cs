@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using Lean.Gui;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,8 +16,26 @@ namespace Managers
     {
         private AsyncOperation _asyncOperation;
         [SerializeField] public SceneSettingsSO sceneSettingsSo;
+        [SerializeField] private LeanWindow background;
+        [SerializeField] private LeanWindow defaultUI;
         // public List<SceneReference> gameSceneList;
         private Coroutine _loadSceneProcessCor;
+
+        public LeanWindow Background
+        {
+            get => background;
+            set => background = value;
+        }
+
+        public LeanWindow DefaultUI
+        {
+            get => defaultUI;
+            set => defaultUI = value;
+        }
+
+        private void Start()
+        {
+        }
 
         public void LoadSceneReference(SceneReference reference)
         {
@@ -35,11 +54,14 @@ namespace Managers
         {
             var lvl = levelNumber.ToString("00");
             LoadSceneReference(sceneSettingsSo.gameSceneList.First(i=>i.Name=="G_LevelScene"+lvl));
+            Debug.Log("LEAN");
+
         }
 
         public void LoadMainMenu()
         {
             LoadSceneReference(sceneSettingsSo.gameSceneList.First(i=>i.Name=="MainMenu"));
+
         }
 
         private void Awake()

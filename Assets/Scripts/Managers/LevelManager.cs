@@ -15,6 +15,7 @@ namespace Managers
 
         public static void StartLevel()
         {
+            
             LevelStart?.Invoke();
             IsLevelPlaying = true;
         }
@@ -24,7 +25,6 @@ namespace Managers
             IsLevelPlaying = false;
 
             LevelComplete?.Invoke();
-            PlayerPrefKeys.CurrentPuzzleLevel++;
         }
 
         public static void InitLevelFail()
