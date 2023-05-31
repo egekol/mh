@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3675514db7a24f11a8d543ed2df20724, type: 3}
+  m_Name: FoodLevels
+  m_EditorClassIdentifier: 
+  LevelList:
+  - {fileID: 11400000, guid: fcaf3f7ff5d21684ebff1c72922fac30, type: 2}
+  - {fileID: 11400000, guid: 81820a7f618c35341b9d62a5e5b035c3, type: 2}
+  - {fileID: 11400000, guid: fb9a4f9a7aadd104493b8635a93bd048, type: 2}
+  - {fileID: 11400000, guid: decc726b37e23bb45bd3b510c568ff8a, type: 2}
+  - {fileID: 11400000, guid: e3340e4cb0145a041bedd2a351e61d64, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FoodList 2
   m_EditorClassIdentifier: 
   FoodList:
-  - {fileID: 100000, guid: 54c6faa2dba6665438008d4e7c8ea7e5, type: 3}
-  - {fileID: 100000, guid: 8db774d63ffa4304fb8dddd6116ead54, type: 3}
-  - {fileID: 100000, guid: 3a9857ff38f5efa41ae3ff3ff643f2bd, type: 3}
-  - {fileID: 100000, guid: 7bbb3a38742169a4abd045d20e527d9d, type: 3}
+  - {fileID: 100000, guid: 7149044102d4ffe418bfc28480b28ad7, type: 3}
+  - {fileID: 100000, guid: 3882ee1bc1bdf284b8872917c3979145, type: 3}
+  - {fileID: 100000, guid: 93b3b0626c40d3445a72c4ceab70561b, type: 3}
+  - {fileID: 100000, guid: 214315961896cb246a09ddccf67044d7, type: 3}
